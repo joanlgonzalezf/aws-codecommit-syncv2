@@ -12,7 +12,7 @@ git config --global credential.UseHttpPath true
 aws sts get-caller-identity --query "Account"
 git pull origin ${Branch} --depth 50
 #echo "hola mundo"
-Directory=pwd
+Directory="pwd"
 chmod 777 -R ${Directory}
 git remote add sync ${CodeCommitUrl}
 git push sync ${Branch} --force
